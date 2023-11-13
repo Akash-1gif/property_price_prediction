@@ -1,7 +1,6 @@
 from flask import Flask,render_template,request
 import pickle
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
 
 with open('variables/model.pkl','rb') as pkl_file:
     model=pickle.load(pkl_file)
